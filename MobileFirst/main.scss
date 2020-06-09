@@ -7,27 +7,14 @@ body{
 }
 
 
-footer{
-   
-   
-    .img{
-        justify-content: space-between;
-
-    }
-
-    @media screen and(max-width:$small){
-        justify-content: space-between;
-
- 
-   }
-}
-
 .image{
     height: 50px;
     width: 100%;
 }
 
 .navbar{
+    @media screen and(max-width:$small){
+
     display: flex;
     flex-direction: row;
     position: absolute;

@@ -2,16 +2,6 @@ body {
   height: 100%;
 }
 
-footer .img {
-  justify-content: space-between;
-}
-
-@media screen and (max-width: 700px) {
-  footer {
-    justify-content: space-between;
-  }
-}
-
 .image {
   height: 50px;
   width: 100%;
