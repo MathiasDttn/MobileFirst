@@ -1,0 +1,144 @@
+// Variables
+$navbar-height:70px;
+$hero-height: 200px;
+$footer-height: 184px;
+$blue-selection-height: 100px;
+$light-color: 20;
+$dark-color: 20;
+$color: 20;
+$yellow-selection-height: 100px;
+$grey-selection-height: 100px;
+
+
+
+//Couleur
+$noir:#000000;
+$rouge:#ff0000;
+$bleu:#3700ff;
+$yellow:#fffb00;
+$grey:#535353;
+
+// Breakpoints
+$xsmall: 370px;
+$small: 700px;
+$medium: 1080px;
+$large: 1400px;
+$xlarge: 1920px;
+
+html, body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar{
+    width: 100%;
+    height: $navbar-height;
+    background-color:$noir;
+
+    @media screen and(max-width:$small){
+        background-color: #ffffff;
+    }
+}
+
+.hero {
+    width: 100%;
+    height: $hero-height;
+    background-color:$rouge;
+}
+
+.blue-selection {
+    width: 100%;
+    height: $blue-selection-height;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .bs-block{
+        height: 100px;
+        flex:1;
+
+        &.light-blue{
+            background-color: lighten($color:$bleu, $amount: 20);
+        }
+        
+        &.dark-blue{
+            background-color: darken($color:$bleu, $amount: 20);
+        }
+
+    }
+}
+
+.yellow-selection {
+    width: 100%;
+    height: $yellow-selection-height;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    .bs-block{
+        height: 100px;
+        flex:1;
+    
+        &.light-yellow{
+            background-color: lighten($color:$yellow, $amount: 5);
+        }
+            
+        &.dark-yellow{
+            background-color: darken($color:$yellow, $amount: 5);
+        }
+    
+    }
+}
+
+.grey-selection {
+    width: 100%;
+    height: $grey-selection-height;
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+    
+    .bs-block{
+        height: 100px;
+        flex:1;
+        @media screen and (max-width: $small) { min-width: 100%; }
+
+        @media screen and (max-width: $medium) {
+            min-width: 50%;
+            max-width: 50%;
+        }
+    
+        &.light-grey{
+            background-color: #7a7979;
+        }
+        &.grey{
+            background-color: #444444;
+        }
+    
+            
+        &.dark-grey{
+            background-color: #272727;
+            @media screen and (max-width: $small){display: none;}
+
+        }
+    
+    }  
+}
+
+.footer{
+    width: 100%;
+    height: $footer-height;
+    background-color:$noir;
+}
+
+@media(max-width:$medium){
+
+    .blue-selection{
+        flex-direction: column;
+    }
+
+    
+   
+}
