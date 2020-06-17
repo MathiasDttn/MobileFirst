@@ -41,6 +41,37 @@ body, html {
 }
 
 @media screen and (min-width: 700px) {
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-top: 20px;
+    height: auto;
+    background-color: grey;
+  }
+  .icone p {
+    color: #fbfd70;
+  }
+  .titre {
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 20px;
+  }
+  .foot {
+    display: flex;
+    justify-content: space-around;
+  }
+  .foot p {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .foot h2 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .foot .horaire {
+    color: white;
+  }
   .navbar {
     display: flex;
     top: 0;
