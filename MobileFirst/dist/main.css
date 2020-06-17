@@ -1,25 +1,72 @@
-body {
+body, html {
+  padding: 0;
+  margin: 0;
+  width: 100%;
   height: 100%;
 }
 
-.image {
-  height: 50px;
-  width: 100%;
-}
-
 .navbar {
-  display: flex;
   flex-direction: row;
-  position: absolute;
-  bottom: 0;
   width: 100%;
-  text-align: center;
   position: fixed;
-  padding-bottom: 20px;
-  border-top: solid;
-  padding-top: 15px;
+  bottom: 0;
+  border-top: 1px solid #aeaeb3;
+  height: 70px;
+  text-align: center;
 }
 
-p {
+@media screen and (max-width: 700px) {
+  .navbar img {
+    display: none;
+  }
+}
+
+.navbar .nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar .image {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.navbar .image p {
+  margin: 0;
   font-family: Arial;
+}
+
+.navbar .image i {
+  color: #727272;
+}
+
+@media screen and (min-width: 700px) {
+  .navbar {
+    display: flex;
+    top: 0;
+    background-color: blueviolet;
+    border-bottom: 1px solid #aeaeb3;
+    align-items: center;
+    height: 70px;
+  }
+  .navbar img {
+    padding-left: 25px;
+  }
+  .navbar .nav {
+    width: auto;
+    display: flex;
+    margin-left: auto;
+    flex: none;
+  }
+  .navbar .image {
+    margin: 0;
+    padding-right: 25px;
+    width: auto;
+  }
+  .navbar .image p {
+    color: white;
+  }
+  .navbar .image i {
+    display: none;
+  }
 }

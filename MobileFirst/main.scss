@@ -2,35 +2,86 @@ $small: 700px;
 
 
 
-body{
+body, html{
+    padding:0;
+    margin: 0;
+    width: 100%;
     height: 100%;
 }
 
-
-.image{
-    height: 50px;
-    width: 100%;
-}
-
 .navbar{
-    @media screen and(max-width:$small){
-
-    display: flex;
     flex-direction: row;
-    position: absolute;
-    bottom: 0;
     width: 100%;
+    position:fixed;
+    bottom:0;
+    border-top:1px solid rgb(174, 174, 179);
+    height: 70px;
     text-align: center;
-    position: fixed;
-    padding-bottom: 20px;
-    border-top: solid;
-    padding-top: 15px;
+
+    @media screen and(max-width:$small){
+        img{
+            display: none;
+        }
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-around;
+        }
+
+    .image{
+        width:100%;
+        margin-top: 10px;
+        p{
+            margin:0;
+            font-family: Arial;
+        }
+
+        i {
+            color: #727272;
+        }
+    }
+}   
+
 
     
+@media screen and(min-width:$small){
+
+    .navbar{
+        display: flex;
+        top:0;
+        background-color: blueviolet;
+        border-bottom:1px solid rgb(174, 174, 179);
+        align-items: center;
+        height: 70px;
+
+        img{
+            padding-left: 25px;
+        }
+        
+        .nav{
+            width: auto;
+            display: flex;
+            margin-left: auto;
+            flex: none;
+        }
+        .image{
+            margin:0;
+            padding-right: 25px;
+            width: auto;
+        
+            p{
+                color: white;
+            }
+
+            i{
+                display: none;
+            }
+        }
+    }
 }
-p{
-    font-family: Arial;
-}
+
+
 
 
 
