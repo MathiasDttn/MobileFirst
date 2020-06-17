@@ -10,7 +10,6 @@ body, html{
 }
 
 
-
 .navbar{
     flex-direction: row;
     width: 100%;
@@ -22,6 +21,10 @@ body, html{
 
     @media screen and(max-width:$small){
         img{
+            display: none;
+        }
+
+        .foot{
             display: none;
         }
     }
@@ -71,6 +74,13 @@ body, html{
         padding-bottom: 20px;
     }
 
+    .contact{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
     .foot{
         display: flex;
         justify-content: space-around;
@@ -84,11 +94,40 @@ body, html{
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        h3{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h5{
+            color: #575757;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
         .horaire{
             color: white;
         }
-
     }
+
+    .contact{
+        p{
+            color: #3d3d3d;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    }
+
+    .phone{
+        display: flex;
+        justify-content: space-around;
+            
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            padding-left: 10px;
+        }
+    }
+
+    
 
     .navbar{
         display: flex;
